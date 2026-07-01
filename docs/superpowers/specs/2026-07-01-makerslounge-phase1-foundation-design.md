@@ -17,15 +17,20 @@ Success = a real Toronto builder can sign in, find their info already waiting, c
 - **AI concierge (assistant-ui)** and **operator agents (Vercel agents)** → Phase 4.
 - **Two-sided / recruiter-VC-sponsor access** → later. Phase 1 only keeps data *structured* enough (clean tags) to not foreclose it.
 
-## 3. Users & the consent constraint (hard requirement)
+## 3. Users, consent & the "private signal, public surface" principle (hard requirement)
 
-The Luma data came from **event registration forms, not app sign-ups.** Therefore:
+The Luma data came from **event registration forms, not app sign-ups.** The governing principle:
 
-- Imported profiles are **`unclaimed`** and are **NOT publicly visible** anywhere in the app until the person signs in and claims them.
-- The directory/showcase show **only claimed (opted-in) members**.
+> **Private signal, public surface** — we may *match/recommend* using what people privately told us (what they're building, what they need), but we only ever *display* public information (name + public LinkedIn). We never disclose what someone shared with us in confidence.
+
+Concretely:
+
+- Imported profiles are **`unclaimed`** by default. Their **private fields** (`building`, `needs_help_with`, interests, contact email, event answers) are **never displayed** to other users until the person claims and opts in.
+- **Directory & showcase** (browsing full profiles) show **claimed (opted-in) members only.**
+- **Matching recommendations (Phase 2)** may include unclaimed people, but only as a **minimal public card: display name + public LinkedIn URL.** No private fields, no contact info. For unclaimed people the match *reason* must stay generic (no specifics that reveal what they shared). Sign-up remains **email-based** (Clerk); LinkedIn is a profile field, not the login.
 - Claiming = explicit opt-in; the claim screen shows what data we have and lets them edit/remove before going live.
 
-This protects trust, which is part of the moat. Non-negotiable for Phase 1.
+This protects trust, which is part of the moat. Non-negotiable.
 
 ## 4. Architecture & stack
 
@@ -52,12 +57,16 @@ Emails are the cross-event identity key. Store all timestamps UTC.
 
 **`event_response`** — the longitudinal moat. One row per Luma submission.
 - `id`, `email` (lowercased, indexed), `full_name`, `event_name`, `event_date`,
-- `neighbourhood`/location, `interests` (text[]), `building` (text), `needs_help_with` (text), `can_help_with` (text), `links` (jsonb),
+- `neighbourhood`/location, `interests` (text[]), `building` (text), `needs_help_with` (text), `can_help_with` (text),
+- `linkedin_url` (text, from the Luma export — public), `links` (jsonb — github/x/site/etc.),
 - `raw` (jsonb — the original CSV row, so we never lose data), `submitted_at`, `imported_at`.
+
+*Privacy tags:* `building`, `needs_help_with`, `interests`, `email`, and event answers are **private** (never surfaced for unclaimed people). `display_name` + `linkedin_url` are **public** and may appear in a minimal recommendation card.
 
 **`member`** — current profile (one per unique email).
 - `id`, `email` (unique), `clerk_user_id` (nullable until claimed), `status` (`unclaimed` | `claimed`),
-- `display_name`, `photo_url`, `neighbourhood`, `skills` (text[]), `interests` (text[]), `building`, `needs_help_with`, `can_help_with`, `links` (jsonb), `bio`,
+- `display_name`, `photo_url`, `neighbourhood`, `skills` (text[]), `interests` (text[]), `building`, `needs_help_with`, `can_help_with`, `bio`,
+- `linkedin_url` (text, first-class public link), `links` (jsonb — github/x/site),
 - **billing (schema only, unused in P1):** `plan` (default `free`), `stripe_customer_id` (nullable), `subscription_status` (nullable),
 - `created_at`, `updated_at`, `claimed_at` (nullable).
 
