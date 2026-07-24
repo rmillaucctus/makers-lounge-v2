@@ -1,3 +1,10 @@
+---
+type: "Reference"
+title: "Domain: data model and visibility rules"
+description: "Explains the core business idea, main records, visibility rules, and identity lifecycle for the MakersLounge project."
+openwiki_generated: true
+---
+
 # Domain: data model and visibility rules
 
 ## Core business idea

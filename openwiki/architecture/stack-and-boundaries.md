@@ -1,3 +1,10 @@
+---
+type: "Reference"
+title: "Architecture: stack and boundaries"
+description: "Captures the intended implementation stack and the module boundaries described in the Phase 1 foundation spec."
+openwiki_generated: true
+---
+
 # Architecture: stack and boundaries
 
 ## Purpose

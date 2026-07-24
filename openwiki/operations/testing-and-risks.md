@@ -1,3 +1,10 @@
+---
+type: "Reference"
+title: "Operations: testing, errors, and open decisions"
+description: "Describes the testing strategy, error handling expectations, open decisions, and important non-goals for Phase 1 in the project."
+openwiki_generated: true
+---
+
 # Operations: testing, errors, and open decisions
 
 ## Testing strategy in the spec

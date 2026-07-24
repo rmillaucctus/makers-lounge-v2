@@ -1,3 +1,10 @@
+---
+type: "Reference"
+title: "Workflows: import and claim onboarding"
+description: "Outlines the CSV import pipeline and claim onboarding workflow for the MakersLounge project."
+openwiki_generated: true
+---
+
 # Workflows: import and claim onboarding
 
 ## CSV import pipeline
