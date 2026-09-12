@@ -1,3 +1,9 @@
+---
+type: "Reference"
+title: "Architecture: stack and boundaries"
+openwiki_generated: true
+---
+
 # Architecture: stack and boundaries
 
 ## Purpose

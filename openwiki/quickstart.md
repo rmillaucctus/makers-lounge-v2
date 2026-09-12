@@ -1,3 +1,9 @@
+---
+type: "Reference"
+title: "OpenWiki Quickstart"
+openwiki_generated: true
+---
+
 # OpenWiki Quickstart
 
 ## What this repository is

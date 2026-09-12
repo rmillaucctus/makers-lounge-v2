@@ -1,3 +1,9 @@
+---
+type: "Reference"
+title: "Domain: data model and visibility rules"
+openwiki_generated: true
+---
+
 # Domain: data model and visibility rules
 
 ## Core business idea
