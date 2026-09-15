@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:452f9988843de53ecf65e7e62015df8efad05e41b98307992e76c01a00e317c7",
+  "claims": [
+    {
+      "id": "claim_d71cc61fe39b4a92a1b23f54efd8004c",
+      "statement": "The MakersLounge v2 repository utilizes Next.js for the app stack, Clerk for authentication, Neon for data storage, and Vercel Blob for media handling as described in the Phase 1 design specification.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_dc4283afacf748b1a43159228cbbdfff",
+      "statement": "The repository follows the principle of private signal, public surface to define data visibility and user consent regarding profile information.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_14dfa9b7360c4c438ac5b3dc9b2699f1",
+      "statement": "The repository includes detailed documentation on architecture, domain models, workflows for user onboarding, and operational guidelines for testing and risk management.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-15T13:01:26.041Z"
+  }
+}
