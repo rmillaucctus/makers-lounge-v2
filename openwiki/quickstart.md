@@ -1,3 +1,15 @@
+---
+type: "Reference"
+title: "OpenWiki Quickstart"
+openwiki_generated: true
+verified:
+  - by: openwiki/0.5.2
+    at: 2026-09-19T12:10:54.177Z
+sources:
+  - id: openwiki-source-6d57cc6c6e10be6d171759fd
+    resource: repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md
+---
+
 # OpenWiki Quickstart
 
 ## What this repository is

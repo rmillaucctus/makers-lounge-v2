@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:75340f2241f6ab1e0c0fa40b72f824c4c9563a6fde226ee13e8e24a6b52aa4b8",
+  "claims": [
+    {
+      "id": "claim_1d8079a1f8a6422d8b7d8aad8a78f14d",
+      "statement": "MakersLounge v2 aims to create a community directory and project showcase using event-registration responses while adhering to privacy rules.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_605151cae28d49d688ee7f5efdd5c283",
+      "statement": "The repository follows a 'private signal, public surface' principle meaning private event data assists in matching and profile preparation, while public display is limited for unclaimed profiles.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_bbf5435ede7846ada61e816ce4a4cf6c",
+      "statement": "The repository's current state is documentation-led, meaning substantial project files have yet to be linked to implemented code, which will evolve as the codebase grows.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_655f8ec633c24c2b96b57889e8cca04d",
+      "statement": "The testing strategy emphasizes unit tests for pure logic and integration tests to validate critical workflows and user experience.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-19T12:10:54.177Z"
+  }
+}

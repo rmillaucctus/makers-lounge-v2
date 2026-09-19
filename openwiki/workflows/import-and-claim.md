@@ -1,3 +1,9 @@
+---
+type: "Reference"
+title: "Workflows: import and claim onboarding"
+openwiki_generated: true
+---
+
 # Workflows: import and claim onboarding
 
 ## CSV import pipeline

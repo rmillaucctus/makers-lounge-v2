@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7cce56e422ef28a120c73ea18ea936182d3df81aa47d0ef33937bd2130423f49",
+  "claims": [
+    {
+      "id": "claim_a5ced5efee564882a87eec65ef94104d",
+      "statement": "The intended implementation stack for MakersLounge includes Next.js, Clerk, Neon Postgres, Vercel Blob, shadcn/ui with Tailwind, and project-scoped MCP servers.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md#L17-L22",
+          "version": "repo-lines-v1:sha256:ac905eba8a6f13bdc6b9af12f990af3fc0f8650c71530ce32650e061eee4bd80:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDg2YTQyOTBkYWI5NTk3NzIyNDI1YTYyZDRmNjYzZDVjNGU5OTZmYjZjOGFiOTNlNjA2ZmFjMjdhMTNiMTQ0ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjJjNjgzMDA2NTEwYzgwYzBmYWZiMzJiNjgxZGIyYjhkZGMyZjE2ODViOTVhNWMxZGM2NzNhODFhMzJmYjI1NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmVjZTEyYWQ2ZTQ3YTBkN2YyNmE4NDkzNzcxMGEzMzYzNThiYTMzMmI5ZGQwMTIwMTM4ZmIwMmI1MTM0MmYwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTE3ODRlMjVhYzhlNDlkNzE1N2UwZjY0NzBkNTRkMjg0ZjU0YzcxMDdhZWY2NjA1MzU1ZjUzZjQwOTAxNjU4NyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_295557cbb94143d9aa702345d5caa75d",
+      "statement": "The intended module boundaries for MakersLounge include lib/db for database interactions, lib/import for CSV parsing, lib/profile for member profiles, app/(marketing) for public pages, app/(app) for authenticated pages, and components/ui for UI primitives.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md#L28-L37",
+          "version": "repo-lines-v1:sha256:84896540642825c11ff03def8b77f28004e99c0db9303dc3c61b894b7c9f58bd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2MmVmZWZjNzA1NTkzYTM4MDE2YTI2MWQzNzBmZTk2YTQ1ZTJjNjUyMzIxOGIzYWZmMjY1ZTY0YTNiOGU0OGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MjVjYjFiMWIyOGE4OGI4ZDBiMTljOGJmNzdhZDE0ZGY5YjIzNTNmMWRkM2JlMzM4NmNlM2IwYTQzYWE3M2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVhYTg1ZDhjMmJiMzg5N2YyMTJhZGNiYWRlMzMxYzdiNjU0MWUwNWIxYjc3MTliOGU0ZGM0OTM1OTcyZGJiNDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM1YzA1MTAwNGU4NDU2ODQ1MzQyMTQyNWY2OWE1MzBiODM2MzljNTIzYzFlMTg1NDY3Mjg0NDE2YjBkODllNTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_85ad5632610a46499605adeab34d9fde",
+      "statement": "Future agents implementing MakersLounge should watch for database changes, import/derivation rules, and visibility rules to ensure proper data management and access control.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md#L43-L47",
+          "version": "repo-lines-v1:sha256:3e21e6eae368d6e364bba2755ef653842794324bc2e8bf4b9e233da7e811bb6e:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmVkNzExNGRhMWU4YzQ3Y2Y2NDQ5MTllODVkZjJkNzA4NzRlNDU5NjNiNzkxOTY2ZDJmNTU0ZTI5NGYxOGMxZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTk1ZWEzZjU4Yzg4MjYzNmUxN2RhOGQ1ZjkyNzRhZDc2OTBkN2QzZjA1NTI1ZWIzYjM5MDE3YzU2YmZiMDI5ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODI1ODFhYzk3Yzc3ZjlhNzQzOWQxMTUzMDgyMThlNmE0ZTY3YjYzOTAzNmNkMzIzYWRkMTEyNGRlNzA4MTBkZCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-19T12:10:54.177Z"
+  }
+}
