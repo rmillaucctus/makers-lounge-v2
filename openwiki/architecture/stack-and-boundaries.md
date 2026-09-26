@@ -1,3 +1,15 @@
+---
+type: "Reference"
+title: "Architecture: stack and boundaries"
+openwiki_generated: true
+verified:
+  - by: openwiki/0.6.0
+    at: 2026-09-26T12:35:51.443Z
+sources:
+  - id: openwiki-source-6d57cc6c6e10be6d171759fd
+    resource: repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md
+---
+
 # Architecture: stack and boundaries
 
 ## Purpose

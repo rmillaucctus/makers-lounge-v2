@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:9315fcfbc010923dca4840e126760de69225a15f514beefbc876a3370d315a14",
+  "claims": [
+    {
+      "id": "claim_26f8b2623f0344c8bfe02ddb91b446d0",
+      "statement": "The OpenWiki serves as a comprehensive documentation platform designed for the MakersLounge v2 project, focusing on a community directory product underpinned by a private signal, public surface principle.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_dd06266945cb481790712c40c818827b",
+      "statement": "The Quickstart section offers users a structured onboarding pathway through key documentation topics including the domain model, implementation structure, import workflows, and testing strategies.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_b5d4ea5a6d9a46a98088ae052c4f2926",
+      "statement": "The OpenWiki documentation provides a repository map that links to architecturally significant, domain-specific, operational, and workflow-related pages.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_3e44b384ba284e3ca5164762a7d23bd9",
+      "statement": "As of the latest documentation, the codebase is mainly documentation-led, with strategic design specifications guiding future implementation work.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-09-26T12:35:51.443Z"
+  }
+}

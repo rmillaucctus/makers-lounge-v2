@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:2d91db8c5ee10437c55e3cae6ccf3fee35cc79d0a0144207274987f990940d40",
+  "claims": [
+    {
+      "id": "claim_9f23394b2ec54afea8bd13b2f0c0df90",
+      "statement": "The implementation stack consists of Next.js on Vercel, Clerk for authentication, Neon Postgres for data storage, Vercel Blob for media storage, and shadcn/ui with Tailwind v4 for UI design.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md#L4-L22",
+          "version": "repo-lines-v1:sha256:e02455f29bab5a058545ea19b92eb2f3f6c9c167a68d5803f12fc1d1a4bb2a5a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1NWFlZDk4MmFmNjgzZmMwOGNjODFlNzYzNmJjYjQ1ZjU1M2RiY2JkYjk2ODgxMWY3MDRmZGQ2YzU0YzM5NzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyYzY4MzAwNjUxMGM4MGMwZmFmYjMyYjY4MWRiMmI4ZGRjMmYxNjg1Yjk1YTVjMWRjNjczYTgxYTMyZmIyNTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzNzljMjkzOWQ3ZmMyYjZiZjkyOWZmYjJhZGRlZTgwMTVjNDM1YThiMzIzOWJiOTFlZjM4ZDZjNmQyYTMwMDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUxNzg0ZTI1YWM4ZTQ5ZDcxNTdlMGY2NDcwZDU0ZDI4NGY1NGM3MTA3YWVmNjYwNTM1NWY1M2Y0MDkwMTY1ODcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1a800da9719041029c422f13f7872186",
+      "statement": "The module boundaries defined in the architecture include lib/db for database interactions, lib/import for CSV handling, lib/profile for member profiles, separate app modules for landing pages and authenticated surfaces, and a components structure for UI elements.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md#L28-L37",
+          "version": "repo-lines-v1:sha256:84896540642825c11ff03def8b77f28004e99c0db9303dc3c61b894b7c9f58bd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2MmVmZWZjNzA1NTkzYTM4MDE2YTI2MWQzNzBmZTk2YTQ1ZTJjNjUyMzIxOGIzYWZmMjY1ZTY0YTNiOGU0OGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4MjVjYjFiMWIyOGE4OGI4ZDBiMTljOGJmNzdhZDE0ZGY5YjIzNTNmMWRkM2JlMzM4NmNlM2IwYTQzYWE3M2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVhYTg1ZDhjMmJiMzg5N2YyMTJhZGNiYWRlMzMxYzdiNjU0MWUwNWIxYjc3MTliOGU0ZGM0OTM1OTcyZGJiNDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM1YzA1MTAwNGU4NDU2ODQ1MzQyMTQyNWY2OWE1MzBiODM2MzljNTIzYzFlMTg1NDY3Mjg0NDE2YjBkODllNTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_daf80594df9b41ad9e60b19c5b73ee61",
+      "statement": "Three classes of changes to watch for during implementation are database changes, import/derivation rule purity, and the enforcement of visibility rules between UI and API code.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md#L41-L47",
+          "version": "repo-lines-v1:sha256:be3d857bc4cb93de0f229d3de2eb7918fa50703783e7400e6208cb03074a5716:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDRjYjNiMWYwYjQwNzFjODViOGU4MmY4OTM0MjM1ZmVhMTRlMTljZjI2YTlhZDMyNzFiNzRjNWI5ZDE1ZDZmZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmVkNzExNGRhMWU4YzQ3Y2Y2NDQ5MTllODVkZjJkNzA4NzRlNDU5NjNiNzkxOTY2ZDJmNTU0ZTI5NGYxOGMxZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzVjMDUxMDA0ZTg0NTY4NDUzNDIxNDI1ZjY5YTUzMGI4MzYzOWM1MjNjMWUxODU0NjcyODQ0MTZiMGQ4OWU1OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODI1ODFhYzk3Yzc3ZjlhNzQzOWQxMTUzMDgyMThlNmE0ZTY3YjYzOTAzNmNkMzIzYWRkMTEyNGRlNzA4MTBkZCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.0",
+    "at": "2026-09-26T12:35:51.443Z"
+  }
+}

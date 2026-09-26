@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/stack-and-boundaries.md": {
+      "pageVersion": "sha256:2d91db8c5ee10437c55e3cae6ccf3fee35cc79d0a0144207274987f990940d40",
+      "completedBy": "openwiki/0.6.0",
+      "completedRunId": "dc03dbaa-f075-4265-a37c-850588c339be",
+      "gitHead": "670d99437969234717f1214a6d262f47704452b0",
+      "sourceFingerprint": "sha256:7c274d057ce97ebb1d27967f868a1f6adc6e4551ded11b196441c40179673712"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:9315fcfbc010923dca4840e126760de69225a15f514beefbc876a3370d315a14",
+      "completedBy": "openwiki/0.6.0",
+      "completedRunId": "dc03dbaa-f075-4265-a37c-850588c339be",
+      "gitHead": "670d99437969234717f1214a6d262f47704452b0",
+      "sourceFingerprint": "sha256:7c274d057ce97ebb1d27967f868a1f6adc6e4551ded11b196441c40179673712"
+    }
+  }
+}
