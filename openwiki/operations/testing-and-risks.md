@@ -1,3 +1,9 @@
+---
+type: "Reference"
+title: "Operations: testing, errors, and open decisions"
+openwiki_generated: true
+---
+
 # Operations: testing, errors, and open decisions
 
 ## Testing strategy in the spec

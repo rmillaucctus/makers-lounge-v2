@@ -1,27 +1,41 @@
-# Architecture: stack and boundaries
+---
+type: "Reference"
+title: "Architecture: Stack and Boundaries"
+openwiki_generated: true
+verified:
+  - by: openwiki/0.6.1
+    at: 2026-10-02T14:21:00.478Z
+sources:
+  - id: openwiki-source-6d57cc6c6e10be6d171759fd
+    resource: repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md
+generated: { by: "openwiki/0.6.1", at: "2026-10-02T14:21:00.478Z" }
+---
+
+
+# Architecture: Stack and Boundaries
 
 ## Purpose
 
-This page captures the intended implementation stack and the module boundaries described in the Phase 1 foundation spec.
+This page captures the intended implementation stack and the module boundaries described in the Phase 1 foundation specification.
 
-## Stack direction
+## Stack Direction
 
-The spec calls for:
+The specification calls for:
 
-- **Next.js (App Router)** on Vercel for UI, route handlers, and server actions in one repo.
+- **Next.js (App Router)** on Vercel for UI, route handlers, and server actions in one repository.
 - **Clerk** for authentication and open sign-up.
 - **Neon Postgres** for data storage, accessed through a typed query layer.
 - **Vercel Blob** for profile photos and project screenshots.
-- **shadcn/ui** with **Tailwind v4** and a **tweakcn** theme for the warm, approachable visual style.
+- **shadcn/ui** with **Tailwind v4** and a **tweakcn** theme for a warm, approachable visual style.
 - Project-scoped **MCP servers** for shadcn, Neon, Clerk, and Stripe.
 
-Source: `docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md` sections 4 and 9.
+*Source: `docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md` sections 4 and 9.*
 
-## Intended module boundaries
+## Intended Module Boundaries
 
-The spec defines the following conceptual boundaries:
+The specification defines the following conceptual boundaries:
 
-- `lib/db` — schema, migrations, and query helpers; the only layer that talks to Neon.
+- `lib/db` — schema, migrations, and query helpers; the only layer that communicates with Neon.
 - `lib/import` — CSV parsing and normalization into `EventResponse` rows plus derived `Member` drafts.
 - `lib/profile` — computes a current member profile from historical responses.
 - `app/(marketing)` — public landing pages.
@@ -32,15 +46,15 @@ The spec defines the following conceptual boundaries:
 
 These boundaries matter because the core logic is designed to be unit-testable and to isolate data access from presentation.
 
-## What future agents should watch for
+## Future Considerations for Implementation
 
 When implementation begins, look for three classes of changes:
 
-1. **Database changes** — should land in the data layer, not in route handlers or UI.
-2. **Import/derivation rules** — should remain pure where possible, because the spec expects them to be testable without the app shell.
-3. **Visibility rules** — UI and API code must preserve the private/public split described in the domain page.
+1. **Database changes** — should land in the data layer and not in route handlers or UI.
+2. **Import/derivation rules** — should remain pure where possible, as the specification expects them to be testable without the app shell.
+3. **Visibility rules** — UI and API code must maintain the private/public split described in the domain page.
 
-## Related pages
+## Related Pages
 
 - [Domain: data model and visibility rules](../domain/data-model.md)
 - [Workflows: import and claim onboarding](../workflows/import-and-claim.md)

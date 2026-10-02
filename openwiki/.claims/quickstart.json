@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:d3947957750f2a8b7d087df4cfa17e6622cb801ef7fea0da9bd096409c8d239a",
+  "claims": [
+    {
+      "id": "claim_d45f528fb80f4bce87021cd5eab81d5d",
+      "statement": "MakersLounge v2 is designed as a community directory product based on a Phase 1 foundation spec.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_87fa68fd2dfd47a891e74379c702a0ff",
+      "statement": "The repository is built around a Next.js application combined with Clerk, Neon, and Vercel components.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_c662f856471b408098f65fd99e99187b",
+      "statement": "The primary principle of the product is the 'private signal, public surface' which defines how data is matched and displayed.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_b2c6c11df6c34c75b99a1252dfa19240",
+      "statement": "The import process for the historical Luma dataset is meant to be idempotent and rerunnable.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    },
+    {
+      "id": "claim_2b721123a6d841608690827e1cfa0c65",
+      "statement": "Claiming of profiles in the directory is managed through verified email addresses using Clerk.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md",
+          "version": "repo-file-v1:sha256:96e347c74ce49e5559fef053eef71b04fcf53edad4c3ff2a25ca4498b723215d"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.1",
+    "at": "2026-10-02T14:21:00.478Z"
+  }
+}

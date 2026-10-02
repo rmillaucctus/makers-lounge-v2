@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:da3fb0a8e74a907a1b9cf6e8d6c9edb35a285a6165f28eb4e6b6406d8ca84d25",
+  "claims": [
+    {
+      "id": "claim_f5d1b9869d03477eab197bdb75932d27",
+      "statement": "The implementation stack for the project includes Next.js, Clerk, Neon Postgres, Vercel Blob, shadcn/ui with Tailwind v4, and project-scoped MCP servers.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md#L4-L9",
+          "version": "repo-lines-v1:sha256:e71e3116d8c8f01ad49b5e2fd3ce036959f55872210d085d4258197eedd51e05:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDU1YWVkOTgyYWY2ODNmYzA4Y2M4MWU3NjM2YmNiNDVmNTUzZGJjYmRiOTY4ODExZjcwNGZkZDZjNTRjMzk3NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDBhZTI0ZjFjODU2YzI3ZmQ0MmFhN2FjMGE5NDFkZjc0M2ZkYzk0NmUxNmFmYWZkYjM3OWZkMjIxODNhNTIzMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTM3OWMyOTM5ZDdmYzJiNmJmOTI5ZmZiMmFkZGVlODAxNWM0MzVhOGIzMjM5YmI5MWVmMzhkNmM2ZDJhMzAwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmEyZWYzMDYzNDFmOTYzY2FiZWRkYzY3Njg0NzNiZTc4MTM3MDI4MDE0NzQ1MTQzZTYzYmIyOGZhNmUxMWZjOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_5a0f44fb8f4b438abc94117b77e6f6aa",
+      "statement": "The intended module boundaries include lib/db, lib/import, lib/profile, app/(marketing), app/(app), app/onboarding/claim, components/ui, and components/*.",
+      "evidence": [
+        {
+          "resource": "repo://docs/superpowers/specs/2026-07-01-makerslounge-phase1-foundation-design.md#L10-L20",
+          "version": "repo-lines-v1:sha256:ea144dbdf27f85d9a61d0eca89e3762054c0bcf039d67986a8179d6438301482:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyYjk3YjkyYzc2YThiNjBkMTBlMDk5NjQ1YTNiZDJhMmE0YTc1YjJjOTUxM2I0ODk1ZGUwYzQ1NmZlNDRkZTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ1NDI2OGFlMDY3MjYzM2M5MTEwODI0OWVlODdiMDBiYjcyOTM5YTM3ZTc4ZDIwNjA1ODZhYmNlMDNkNWFmMTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0NjE1MWM5Y2Q1MzlkMWRjMjE3ZWIxMjBjNWRkN2I5MDg0NDdkZjAyMzZkZGU0OWEwYjJlNjZlNDQ3NzFlYTEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.6.1",
+    "at": "2026-10-02T14:21:00.478Z"
+  }
+}
